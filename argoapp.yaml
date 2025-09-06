@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: jira-dev
-  namespace: jira
+  namespace: argocd
 spec:
   project: default
   sources:
@@ -20,7 +20,7 @@ spec:
       ref: values   # 👈 define alias "values"
   destination:
     server: https://kubernetes.default.svc
-    namespace: jira
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
