@@ -12,7 +12,7 @@ spec:
       targetRevision: 1.16.1
       helm:
         valueFiles:
-          - $values/values/jira-dev.yaml   # 👈 reference to 2nd repo
+          - $values/Values-jira.yaml   # 👈 reference to 2nd repo
 
     # 2️⃣ Private repo with values
     - repoURL: git@github.com:bsk111675/Jira-data-center-helm-charts.git
